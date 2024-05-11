@@ -1,6 +1,10 @@
 # MeetinOrganizer
  
 #UI
-![](Meeting_register_page.jpg)  
-![](meeting_update_page.jpg)
+
+![](UI_pictures/Meeting_register_page.jpg)
+
+![](UI_pictures/meeting_update_page.jpg)
+
+
 
