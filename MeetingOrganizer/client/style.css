@@ -1,0 +1,97 @@
+.navbar {
+    background-color: #864EBA; /* Arka plan rengi */
+    padding: 10px 0; /* İç boşluk */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+/* Navbar içeriğinin düzeni */
+.navbar ul {
+    list-style-type: none; /* Liste işaretini kaldır */
+    padding: 0; /* İç boşluğu sıfırla */
+    text-align: center; /* Metni ortala */
+}
+
+.navbar li {
+    display: inline-block; /* Satır içi düzen */
+    margin: 0 10px; /* Kenar boşluğu */
+}
+
+/* Navbar bağlantılarının stili */
+.navbar a {
+    color: white; /* Metin rengi */
+    text-decoration: none; /* Altçizgiyi kaldır */
+    padding: 10px 20px; /* Düğme boyutu */
+    border-radius: 5px; /* Köşe yuvarlatma */
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+}
+
+/* Navbar bağlantılarının hover durumunda stili */
+.navbar a:hover {
+    color:#ffbe00
+   
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#deleteMeetingButton {
+    background-color: #864EBA ;
+
+}
+#deleteMeetingButton:hover {
+    background-color: #7944aa ;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
