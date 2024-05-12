@@ -68,11 +68,11 @@ def create_meeting():
 def update_meeting(meeting_id):
     meeting = Meeting.query.get_or_404(meeting_id)
     meeting_data = request.json
-    meeting.topic = meeting_data.get('topic', meeting.topic)
-    meeting.date = meeting_data.get('date',meeting.date)
-    meeting.start_time = meeting_data.get('startTime', meeting.start_time)
-    meeting.end_time = meeting_data.get('endTime',meeting.end_time) 
-    meeting.participants = meeting_data.get('participants', meeting.participants)
+    meeting.topic = meeting_data.get('updateTopic', meeting.topic)
+    meeting.date = meeting_data.get('updateDate',meeting.date)
+    meeting.start_time = meeting_data.get('updateStartTime', meeting.start_time)
+    meeting.end_time = meeting_data.get('updateEndTime',meeting.end_time) 
+    meeting.participants = meeting_data.get('updateParticipants', meeting.participants)
     db.session.commit()
     return jsonify({'message': 'Meeting updated successfully'})
 

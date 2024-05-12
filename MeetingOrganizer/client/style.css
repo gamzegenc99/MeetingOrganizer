@@ -84,7 +84,9 @@ button:hover {
 
 }
 
-ul {
+#meetingList { /* Meeting list sayfasının id'sine göre ul yi düzenlendi */
+    max-width: 400px;
+    margin: 0 auto;
     list-style-type: none;
     padding: 0;
 }
