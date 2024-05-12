@@ -1,4 +1,4 @@
-# MeetinOrganizer
+# Meeting Organizer
  
 #UI
 
