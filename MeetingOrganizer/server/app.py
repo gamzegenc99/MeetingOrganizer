@@ -1,12 +1,19 @@
 from flask import Flask,jsonify, request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
+#Solution the cors problem
 cors = CORS(app, resources={r'/api/*': {'origins': 'http://localhost:8000'}})
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'  
+#Database connection: 
+basedir = os.path.abspath(os.path.dirname(__file__))
+instance_path = os.path.join(basedir, 'instance')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(instance_path, 'mydatabase.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
+
+# Creating an SQLAlchemy instance
 db = SQLAlchemy(app)
 
 
@@ -78,5 +85,4 @@ def delete_meeting(meeting_id):
     return jsonify({'message': 'Meeting deleted successfully'})
    
 if __name__ == '__main__':
-    #db.create_all()
     app.run(debug=True)
