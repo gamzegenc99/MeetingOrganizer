@@ -6,5 +6,8 @@
 
 ![](UI_pictures/meeting_update_page.jpg)
 
+![](UI_pictures/Meeting_list.jpg)
+
+
 
 
